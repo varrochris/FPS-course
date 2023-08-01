@@ -13,8 +13,16 @@ public class InputManager : MonoBehaviour
     {
         playerInput = new PlayerInput();
         playerController = GetComponent<PlayerController>();
+
         playerLook = GetComponent<PlayerLook>();
+
         playerInput.Player.Jump.performed += ctx => playerController.PlayerJump();
+
+        playerInput.Player.Crouch.performed += ctx => playerController.PlayerCrouch();
+        playerInput.Player.Crouch.canceled += ctx => playerController.PlayerCrouch();
+
+        playerInput.Player.Walk.performed += ctx => playerController.PlayerWalk();
+        playerInput.Player.Walk.canceled += ctx => playerController.PlayerWalk();
 
     }
 
