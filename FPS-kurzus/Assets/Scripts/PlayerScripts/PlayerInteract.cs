@@ -9,13 +9,18 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private float distance;
     [SerializeField] private LayerMask layerMask;
 
+    private PlayerUI playerUI;
+    private PlayerInput playerInput;
+
     private void Start()
     {
-        camera = GetComponent<Camera>();
+        playerUI = GetComponent<PlayerUI>();
     }
 
     private void Update()
     {
+        playerUI.UpdateText(string.Empty);
+
         Ray ray = new Ray(camera.transform.position, camera.transform.forward);
         Debug.DrawRay(ray.origin, ray.direction * distance);
         RaycastHit raycastHit;
@@ -23,7 +28,12 @@ public class PlayerInteract : MonoBehaviour
         {
             if(raycastHit.collider.GetComponent<Interactable>() != null)
             {
-                Debug.Log(raycastHit.collider.GetComponent<Interactable>().interatctMessage);
+                Interactable interactable = raycastHit.collider.GetComponent<Interactable>();
+                playerUI.UpdateText(interactable.interatctMessage);
+                if (playerInput.Player.Interact.triggered)
+                {
+                    interactable.BaseInteract();
+                }
             }
         }
     }
