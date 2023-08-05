@@ -18,19 +18,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d78fce1f586605a47ab057832f697a8d, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d78fce1f586605a47ab057832f697a8d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d78fce1f586605a47ab057832f697a8d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d78fce1f586605a47ab057832f697a8d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 8.81
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d78fce1f586605a47ab057832f697a8d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -68,6 +68,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 919048652306890719}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: d78fce1f586605a47ab057832f697a8d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 485668764851992572}
+    - targetCorrespondingSourceObject: {fileID: 100000, guid: d78fce1f586605a47ab057832f697a8d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 640083599402822038}
   m_SourcePrefab: {fileID: 100100000, guid: d78fce1f586605a47ab057832f697a8d, type: 3}
 --- !u!1 &5157120934236495822 stripped
 GameObject:
@@ -88,3 +96,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interatctMessage: Pick up Sniper
+  rb: {fileID: 485668764851992572}
+  coll: {fileID: 640083599402822038}
+  player: {fileID: 0}
+  weaponHolder: {fileID: 0}
+  fpsCam: {fileID: 0}
+  pickUpRange: 0
+  dropForwardForce: 5
+  dropUpwardForce: 5
+  equipped: 0
+--- !u!54 &485668764851992572
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157120934236495822}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &640083599402822038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5157120934236495822}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1711305, y: 0.19687504, z: 0.06372534}
+  m_Center: {x: -0.2524047, y: 0.025244389, z: 0.008856232}

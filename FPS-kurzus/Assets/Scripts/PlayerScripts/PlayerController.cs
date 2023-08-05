@@ -65,7 +65,6 @@ public class PlayerController : MonoBehaviour
             playerVelocity.y = -2f;
         }
         characterController.Move(playerVelocity * Time.deltaTime);
-        Debug.Log(playerVelocity.y);
     }
 
     public void PlayerJump()
