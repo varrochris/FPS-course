@@ -404,36 +404,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2060202828572423372, guid: 6443666642f8bbc49add2b00cc466d2b,
-        type: 3}
-      propertyPath: xSensivity
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2060202828572423372, guid: 6443666642f8bbc49add2b00cc466d2b,
-        type: 3}
-      propertyPath: ySensivity
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263994584757387424, guid: 6443666642f8bbc49add2b00cc466d2b,
-        type: 3}
-      propertyPath: speed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263994584757387424, guid: 6443666642f8bbc49add2b00cc466d2b,
-        type: 3}
-      propertyPath: walkSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263994584757387424, guid: 6443666642f8bbc49add2b00cc466d2b,
-        type: 3}
-      propertyPath: basicSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2263994584757387424, guid: 6443666642f8bbc49add2b00cc466d2b,
-        type: 3}
-      propertyPath: crouchSpeed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4596161326338136301, guid: 6443666642f8bbc49add2b00cc466d2b,
         type: 3}
       propertyPath: m_Name
